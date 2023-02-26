@@ -3,6 +3,10 @@ package Model;
 import java.util.ArrayList;
 
 public class Basket {
-    Float summaryValue;
-    ArrayList<Product> basket = new ArrayList<>();
+    private Float summaryValue;
+    private ArrayList<Product> productList;
+
+    public Basket(ArrayList<Product> productList) {
+        this.productList = productList;
+    }
 }
