@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e5302a2-a9ab-47c3-9452-1dd635cc9b6c" name="Changes" comment="task/11_create_basic_structure_and_classes">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Basket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="1e5302a2-a9ab-47c3-9452-1dd635cc9b6c" name="Changes" comment="Changes after review" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +80,7 @@
       <workItem from="1677417746145" duration="2541000" />
       <workItem from="1677425557060" duration="558000" />
       <workItem from="1677426245224" duration="1090000" />
-      <workItem from="1677433877393" duration="1975000" />
+      <workItem from="1677433877393" duration="2290000" />
     </task>
     <task id="LOCAL-00001" summary="task/10_create_repository_and_push_first_files">
       <created>1677418055069</created>
@@ -107,7 +96,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677420187189</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changes after review">
+      <created>1677435898321</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677435898321</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changes after review">
+      <created>1677435965034</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677435965034</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="task/10_create_repository_and_push_first_files" />
     <MESSAGE value="task/11_create_basic_structure_and_classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="task/11_create_basic_structure_and_classes" />
+    <MESSAGE value="Changes after review" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes after review" />
   </component>
 </project>
