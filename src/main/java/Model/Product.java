@@ -6,38 +6,33 @@ public class Product {
     private Boolean isDiscounted;
     private Float discountedValue;
 
-    private Float currentValue;
-
-public Product(String name, String description, Float regularValue, Float discountedValue, Float currentValue) {
+public Product(String name, String description, Float regularValue, Float discountedValue) {
     this.name = name;
     this.description = description;
     this.regularValue = regularValue;
     this.discountedValue = discountedValue;
-    this.currentValue = currentValue;
     this.isDiscounted = false;
     }
 
     public void discount(Integer percent) {
-    isDiscounted = true;
-    if(isDiscounted) {
-        discountedValue = regularValue - (percent * regularValue);
-        }
+    this.isDiscounted = true;
+    this.discountedValue = this.regularValue - (percent * this.regularValue);
     }
 
     public void removeDiscount() {
-    isDiscounted = false;
-    discountedValue = 0f;
+    this.isDiscounted = false;
+    this.discountedValue = null;
     }
 
     public float getCurrentValue() {
-        if(isDiscounted == false){
-            currentValue = regularValue;
-        }else if(isDiscounted) {
-            currentValue = discountedValue;
-        } return currentValue;
+        if(this.isDiscounted){
+            return this.discountedValue;
+        } else {
+            return this.regularValue;
+        }
     }
 
     public void changeValue(Float newValue) {
-    regularValue = newValue;
+        this.regularValue = newValue;
     }
 }
