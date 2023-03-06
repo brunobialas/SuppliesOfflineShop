@@ -1,5 +1,4 @@
 package Model;
-
 public class Product {
     private String name;
     private String description;
@@ -19,16 +18,16 @@ public class Product {
 
     public void discount(Integer percent) {
         this.isDiscounted = true;
-        this.discountedValue = this.regularValue - (percent * this.regularValue);
+        this.discountedValue = this.regularValue - (percent / 100 * this.regularValue);
     }
 
     public void removeDiscount() {
-        this.isDiscounted = false;
-        this.discountedValue = null;
+    this.isDiscounted = false;
+    this.discountedValue = null;
     }
 
     public float getCurrentValue() {
-        if (this.isDiscounted) {
+        if(this.isDiscounted){
             return this.discountedValue;
         } else {
             return this.regularValue;
