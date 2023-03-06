@@ -1,4 +1,5 @@
 package Model;
+
 public class Product {
     private String name;
     private String description;
@@ -18,16 +19,16 @@ public class Product {
 
     public void discount(Integer percent) {
         this.isDiscounted = true;
-        this.discountedValue = this.regularValue - (percent / 100 * this.regularValue);
+        this.discountedValue = this.regularValue - ((float) percent / 100 * this.regularValue);
     }
 
     public void removeDiscount() {
-    this.isDiscounted = false;
-    this.discountedValue = null;
+        this.isDiscounted = false;
+        this.discountedValue = null;
     }
 
     public float getCurrentValue() {
-        if(this.isDiscounted){
+        if (this.isDiscounted) {
             return this.discountedValue;
         } else {
             return this.regularValue;
@@ -45,31 +46,32 @@ public class Product {
         return true;
     }
 
-    private String isAvailableToString() {
+    private String Available() {
         if (isAvailable()) {
-            return "This product is available";
+            return "Available";
         } else {
-            return "This product is not available at this moment";
+            return "Not available";
         }
     }
 
     public String getBasicInfo() {
         if (this.isDiscounted) {
-            return this.name + " " + this.discountedValue + "$ Old price: " + this.regularValue + "$" + " " + isAvailableToString();
+            return String.format("%s %.2f$ Old price: %.2f$ %s", this.name, this.discountedValue, this.regularValue, Available());
         } else {
-            return this.name + " " + this.regularValue + "$" + " " + isAvailableToString();
+            return String.format("%s %.2f$ %s", this.name, this.regularValue, Available());
         }
     }
 
     public String getDetailedInfo() {
         String text;
-        text = this.name + "\nQuantity: " + this.quantity + " ";
+        text = String.format("%s\nQuantity: %d ", this.name, this.quantity);
         if (this.isDiscounted) {
-            text = text + "\n Discounted price: " + this.discountedValue + "$\nOld price: " + this.regularValue + "$ " + isAvailableToString();
+            text += String.format("\nDiscounted price: %.2f$\nOld price: %.2f$ ", this.discountedValue, this.regularValue);
         } else {
-            text = text + "\nRegular price: " + this.regularValue + "$ ";
+            text += String.format("\nRegular price: %.2f$ ", this.regularValue);
         }
-        text = text + "\nDescription: " + this.description + "\n" + isAvailableToString();
+        text += String.format("\nDescription: %s\n%s", this.description, Available());
         return text;
     }
+
 }

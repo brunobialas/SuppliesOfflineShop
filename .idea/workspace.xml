@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e5302a2-a9ab-47c3-9452-1dd635cc9b6c" name="task_15_in_progress" comment="">
+    <list default="true" id="1e5302a2-a9ab-47c3-9452-1dd635cc9b6c" name="task_15_in_progress" comment="Latest version of task 14.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,6 +137,7 @@
     <MESSAGE value="task/10_create_repository_and_push_first_files" />
     <MESSAGE value="task/11_create_basic_structure_and_classes" />
     <MESSAGE value="Changes after review" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes after review" />
+    <MESSAGE value="Task 15 done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 15 done." />
   </component>
 </project>
