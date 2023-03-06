@@ -2,13 +2,37 @@ package Model;
 public class Product {
     private String name;
     private String description;
-    private Float value;
-    private Boolean isOnSale;
+    private Float regularValue;
+    private Boolean isDiscounted;
+    private Float discountedValue;
 
-public Product(String name, String description, Float value) {
+public Product(String name, String description, Float regularValue, Float discountedValue) {
     this.name = name;
     this.description = description;
-    this.value = value;
-    this.isOnSale = false;
+    this.regularValue = regularValue;
+    this.discountedValue = discountedValue;
+    this.isDiscounted = false;
+    }
+
+    public void discount(Integer percent) {
+    this.isDiscounted = true;
+    this.discountedValue = this.regularValue - (percent * this.regularValue);
+    }
+
+    public void removeDiscount() {
+    this.isDiscounted = false;
+    this.discountedValue = null;
+    }
+
+    public float getCurrentValue() {
+        if(this.isDiscounted){
+            return this.discountedValue;
+        } else {
+            return this.regularValue;
+        }
+    }
+
+    public void changeValue(Float newValue) {
+        this.regularValue = newValue;
     }
 }
