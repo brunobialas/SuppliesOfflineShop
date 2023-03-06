@@ -16,7 +16,7 @@ public Product(String name, String description, Float regularValue, Float discou
 
     public void discount(Integer percent) {
     this.isDiscounted = true;
-    this.discountedValue = this.regularValue - (percent * this.regularValue);
+    this.discountedValue = this.regularValue - (percent/100 * this.regularValue);
     }
 
     public void removeDiscount() {
