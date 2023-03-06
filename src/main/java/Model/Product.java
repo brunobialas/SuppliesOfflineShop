@@ -46,7 +46,7 @@ public class Product {
         return true;
     }
 
-    private String Available() {
+    private String availableToString() {
         if (isAvailable()) {
             return "Available";
         } else {
@@ -56,9 +56,9 @@ public class Product {
 
     public String getBasicInfo() {
         if (this.isDiscounted) {
-            return String.format("%s %.2f$ Old price: %.2f$ %s", this.name, this.discountedValue, this.regularValue, Available());
+            return String.format("%s %.2f$ Old price: %.2f$ %s", this.name, this.discountedValue, this.regularValue, availableToString());
         } else {
-            return String.format("%s %.2f$ %s", this.name, this.regularValue, Available());
+            return String.format("%s %.2f$ %s", this.name, this.regularValue, availableToString());
         }
     }
 
@@ -70,7 +70,7 @@ public class Product {
         } else {
             text += String.format("\nRegular price: %.2f$ ", this.regularValue);
         }
-        text += String.format("\nDescription: %s\n%s", this.description, Available());
+        text += String.format("\nDescription: %s\n%s", this.description, availableToString());
         return text;
     }
 
