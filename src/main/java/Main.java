@@ -1,5 +1,7 @@
 import Model.Product;
 
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -14,6 +16,7 @@ public class Main {
         System.out.println("--------------------");
         String isDetailedText = bialko.getBasicInfo();
         System.out.println(isDetailedText);
+        System.out.println("--------------------");
     }
 
 }
